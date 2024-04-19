@@ -1,0 +1,353 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #dcdcdc;
+  font-family: Helvetica, Arial, sans-serif;
+}
+p, h1, h2, h3 {
+  color: #1e1e1e;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.img-icon img {
+  max-width: 70%;
+}
+.container {
+  margin: 0 auto;
+  width: 1300px;
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 12%, 80%);
+  z-index: 997;
+}
+.navi {
+  margin-right: 10px;
+}
+.navi {
+  transition: border 300ms linear;
+}
+.navi:hover {
+  padding: 8px 0 3px 0;
+  border-bottom: solid 1px #dcdcdc;
+  border-top: solid 1px #dcdcdc;
+}
+.navi a:active {
+  font-size: 1.4rem;
+}
+.icons {
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: #dcdcdc;
+  cursor: pointer;
+}
+.icons a {
+  font-size: 1.5rem;
+}
+.icons a:active {
+  font-size: 1.4rem;
+}
+.hero {
+  height: 1000px;
+  padding: 1rem;
+  margin: 0;
+  background-image: url(man-try-fix-car-engine-problem-local-road-chiang-mai-thailand.jpg);
+  background-size: cover;
+  background-position-y: 70%;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6rem), 0 100%);
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+nav a {
+  font-size: 1.5rem;
+  color: #dcdcdc;
+}
+.hero-text {
+  text-align: center;
+  color: #dcdcdc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.hero-text > p:last-child {
+  font-size: 2rem;
+}
+.hero-text h1 {
+  color: #dcdcdc;
+  margin: 0;
+}
+.hero-text h2, .hero-text p {
+  color: #dcdcdc;
+}
+.hero-text p:last-of-type {
+  font-weight: 700;
+}
+.phone-number {
+  border: solid 2px #dcdcdc;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-colo 1s;
+}
+.phone-a {
+  transition: color 1s;
+  text-decoration: none;
+  color: #dcdcdc;
+  font-size: 2rem;
+}
+.phone-number:hover {
+  background-color: #dcdcdc;
+}
+.phone-a:hover {
+  color: #1e1e1e;
+}
+.phone-a:active {
+  font-size: 1.9rem;
+}
+
+.img-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -50px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.left-service {
+  flex-basis: 45%;
+}
+.right-service {
+  flex-basis: 45%;
+}
+.service-item {
+  text-align: center;
+  font-size: 1.5rem;
+  border: #1e1e1e solid 2px;
+  border-radius: 10px;
+  margin: 100px 0 0;
+  position: relative;
+  padding: 30px 20px 20px 20px;
+  height: auto; 
+  min-height: 360px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.about {
+  padding: 100px 0;
+  margin: 100px 0;
+  width: 100%;
+  background-color: #dad3c4;
+  font-size: 1.5rem;
+  clip-path: polygon(0 0, 100% 3rem, 100% calc(100% - 6rem), 0 100%);
+}
+.phone {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 997;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.phone a {
+  color: #1e1e1e;
+}
+.phone a:active {
+  font-size: 2.9rem;
+}
+.phone:hover {
+  animation: rotation 0.5s linear forwards;
+  
+}
+@keyframes rotation {
+  100% {transform: rotate(190deg);}
+}
+.forth-grid {
+  text-align: right;
+}
+.third-grid {
+  text-align: right;
+}
+.about .container {
+  width: 70%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 50px;
+  row-gap: 0;
+}
+.about h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.about-img {
+  position: relative;
+  flex-basis: 45%;
+  padding: 50px 0;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.about-img img {
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  max-height: 822px;
+}
+.left-arrow {
+  color: hsl(0, 0%, 86%, 60%);
+  font-size: 3rem;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  z-index: 997;
+}
+.right-arrow {
+  color: hsl(0, 0%, 86%, 60%);
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 997;
+}
+.bold {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 67px;
+  height: 500px;
+  align-items: center;
+  z-index: 998;
+  background-color: #1e1e1e;
+  padding: 30px 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu a {
+  color: #dcdcdc;
+}
+.menu .navi {
+  font-size: 1.5rem;
+  margin: 20px 40px;
+}
+.menu-nav {
+  display: none;
+}
+.menu-js {
+  width: 200px;
+}
+.map {
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  max-width: 100%;
+}
+.contact-info {
+  font-size: 1.5rem;
+}
+.contact-info a {
+  color: #1e1e1e;
+  font-size: 1.5rem;
+}
+.contact-info i {
+  margin-right: 20px;
+}
+.contact .container {
+  align-items: center;
+}
+.footer {
+  background-color: #1e1e1e;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.footer p {
+  color: #dcdcdc;
+}
+
+
+@media screen and (max-width:1400px) {
+  .about .container {
+    display: block;
+  }
+  .about .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 40px;
+  }
+  .about-img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .contact .container {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .about .container {
+    display: block;
+  }
+  .left-nav {
+    display: none;
+  }
+  .menu-nav {
+    display: block;
+  }
+  .phone-div {
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .service .container {
+    display: block;
+  }
+  .hero {
+    background-position-x: 30%;
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+  }
+  .hero-text > p:last-child {
+    font-size: 1.5rem;
+  }
+  .phone-number {
+    font-size: 1.2rem;
+  }
+}
